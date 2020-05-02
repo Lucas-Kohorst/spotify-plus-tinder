@@ -60,3 +60,6 @@ ionic cordova build ios
 ionic cordova emulate ios
 ionic serve --cordova --platform ios // emulate ios in browser
 ```
+
+## Demo Video
+[<img src="https://img.youtube.com/vi/https://youtu.be/6Z31MT0MmxA/maxresdefault.jpg" width="50%">](https://youtu.be/6Z31MT0MmxA)
