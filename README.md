@@ -23,7 +23,7 @@
    - Open Spotify OAuth in the same window (needed for iOS)
 
 ## Local Storage
-All playlists are stored in local storage with a unique uid using [UID](https://www.npmjs.com/search?q=uid&. csrftoken=pgDfxqvaPALmijNW0v4Vb5cFjUiufDv0QyqMCUZAfL-). When you like a playlist its uid is stored in an array for the "Liked Playlists" page to reference. 
+All playlists are stored in local storage with a unique uid using [UID](https://www.npmjs.com/package/uid) When you like a playlist its uid is stored in an array for the "Liked Playlists" page to reference. 
 
 ![Local Storage Snapshot](https://github.com/Lucas-Kohorst/spotify-plus-tinder/blob/master/localStorage.png?raw=true)
 
