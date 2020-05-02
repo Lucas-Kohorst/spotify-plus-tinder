@@ -63,3 +63,6 @@ ionic serve --cordova --platform ios // emulate ios in browser
 
 ## Demo Video
 [Demo Video](https://youtu.be/6Z31MT0MmxA)
+
+### iOS
+![iOS Demo Image](https://github.com/Lucas-Kohorst/spotify-plus-tinder/blob/master/ios.png?raw=true)
