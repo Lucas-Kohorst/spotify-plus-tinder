@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Settings
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Settings</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <div class="center" style="margin-top: 2em; display: flex; flex-direction: column; margin: 0 auto; align-content: center; width: 60%;">
+        <p>Spotify Bearer Token:</p>
+        <input style="color: black;" (keyup)="onToken($event)" placeholder="{{token}}" />
+        <ion-button fill="outline" slot="end" (click)="getNewToken() ">Get new token</ion-button>
+        <p>Number of Playlists to Generate:</p>
+        <input style="color: black;" (keyup)="onNumberOf($event)" placeholder="{{numberOf}}" />
+        <p>Play MP3 file (local or through link):</p>
+        <input style="color: black;" (keyup)="onLocalSong($event)" placeholder="{{localSong}}" />
+        <ion-button fill="outline" slot="end" (click)="play() ">Play</ion-button>
+    </div>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Playlists
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div *ngIf="playlists.length > 0">
+        <div class="custom-card-deck">
+            <ion-list>
+                <ion-item *ngFor="let playlist of playlists; let i = index">
+                    <ion-card class="custom-card" *ngIf="i == currentPlaylist" style="width:100%; margin: 0 auto;">
+                        <ion-card-header>
+                            <ion-card-title>Playlist #{{playlists.length - i}}</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ul>
+                                <div *ngFor=" let song of playlist.songs " style="list-style-type: none; ">
+                                    <li>
+                                        <ion-card>
+                                            <ion-item>
+                                                <ion-thumbnail style="padding: 0.75em; ">
+                                                    <img src="{{song.songImg}} " />
+                                                </ion-thumbnail>
+                                                <ion-label>{{ song.songName }}</ion-label>
+                                                <ion-button fill="outline" slot="end" (click)="openSong(song.audio) ">Listen</ion-button>
+                                            </ion-item>
+                                        </ion-card>
+                                    </li>
+                                </div>
+                                <ion-card>
+                                    <ion-button expand="block " (click)="dislike() " color="danger ">Dislike</ion-button>
+                                    <ion-button expand="block " (click)="like(i) " color="success ">Like</ion-button>
+                                </ion-card>
+                            </ul>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+    <div *ngIf="playlists.length==0" style="margin-top: 2em;" class="center">
+        <h3 class="center ">The app will redirect you automatically, but if it doesn't head to settings</h3>
+        <p class="center ">If that doesn't work head to api.spotify.com get a bearer token from the playground, enter it in settings, and refresh</p>
+    </div>
+</ion-content>

@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Saved Playlists
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div *ngIf="display">
+        <div class="custom-card-deck">
+            <ion-list>
+                <ion-item *ngFor="let playlist of playlists; let i = index">
+                    <ion-card class="custom-card" style="width:100%; margin: 0 auto;">
+                        <ion-card-header>
+                            <ion-card-title>Playlist #{{playlists.length - i}}</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ul>
+                                <div *ngFor="let song of playlist.songs " style="list-style-type: none; ">
+                                    <li>
+                                        <ion-card>
+                                            <ion-item>
+                                                <ion-thumbnail style="padding: 0.75em; ">
+                                                    <img src="{{song.songImg}} " />
+                                                </ion-thumbnail>
+                                                <ion-label>{{ song.songName }}</ion-label>
+                                                <ion-button fill="outline" slot="end" (click)="openSong(song.audio) ">Listen</ion-button>
+                                            </ion-item>
+                                        </ion-card>
+                                    </li>
+                                </div>
+                            </ul>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-item>
+            </ion-list>
+            <ion-button expand="block " (click)="clearPlaylists() " color="danger ">Clear Playlists</ion-button>
+        </div>
+    </div>
+    <div *ngIf="!display" style="margin-top: 2em">
+        <h3 class="center ">Your saved playlists will appear here</h3>
+        <p class="center ">To save a playlist simply like it on the bottom of the Playlists page</p>
+    </div>
+</ion-content>

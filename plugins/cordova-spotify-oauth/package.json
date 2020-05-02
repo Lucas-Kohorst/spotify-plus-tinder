@@ -1,0 +1,73 @@
+{
+  "_from": "cordova-spotify-oauth@0.1.13",
+  "_id": "cordova-spotify-oauth@0.1.13",
+  "_inBundle": false,
+  "_integrity": "sha512-zZpJHZDkb+rZBjbrHXgCl9rRYwN8mSrw34+X3v11QwSSV+ssQCRn89NvDNUOB1cy8OsEv0cx92Dm25wfCdYIPQ==",
+  "_location": "/cordova-spotify-oauth",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "cordova-spotify-oauth@0.1.13",
+    "name": "cordova-spotify-oauth",
+    "escapedName": "cordova-spotify-oauth",
+    "rawSpec": "0.1.13",
+    "saveSpec": null,
+    "fetchSpec": "0.1.13"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-spotify-oauth/-/cordova-spotify-oauth-0.1.13.tgz",
+  "_shasum": "0cc8f6b79cee41a66b8811e812e9005395be1ff2",
+  "_spec": "cordova-spotify-oauth@0.1.13",
+  "_where": "/Users/lucaskohorst/Desktop/Files/Spring2020/FoundationsOfMobileDesign/Project4",
+  "author": {
+    "name": "Festify Dev Team",
+    "email": "mail+git@festify.rocks"
+  },
+  "bugs": {
+    "url": "https://github.com/Festify/cordova-spotify-oauth/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Moritz Gunz",
+      "email": "moritz.gunz@gmail.com"
+    },
+    {
+      "name": "Leo Bernard",
+      "email": "admin@leolabs.org"
+    },
+    {
+      "name": "Marcus Weiner",
+      "email": "melodie124@gmail.com"
+    }
+  ],
+  "deprecated": false,
+  "description": "Cordova plugin for authenticating with Spotify",
+  "engines": {
+    "cordovaDependencies": {
+      "0.1.0": {
+        "cordova": "^6.0.0 - 7.0.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/Festify/cordova-spotify-oauth#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "spotify",
+    "oauth"
+  ],
+  "license": "MIT",
+  "main": "www/build/spotify-oauth.min.js",
+  "name": "cordova-spotify-oauth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Festify/cordova-spotify-oauth.git"
+  },
+  "version": "0.1.13"
+}
